@@ -108,6 +108,7 @@ class Deque:
     def getRear(self):
         print("The Current Rear element is: %d " %self.items[self.rear])
 
+#Found it difficult to create the simulating environment
 ##    def Simulation(self):
 ##        prob = random.random()
 ##        if(prob <=0.1):
