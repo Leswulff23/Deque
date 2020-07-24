@@ -130,11 +130,21 @@ class Deque:
         
 #Creates an Object
 Deck = Deque()
+#Shows insertion into deque
 Deck.Insertfront(2)
 Deck.Insertfront(3)
+Deck.Insertfront(5)
+Deck.Insertfront(10)
+Deck.Insertfront(6)
+#Displays current size of deque
 Deck.display()
+#Get front and rear
 Deck.getFront()
+Deck.getRear()
+
+#Deletes from front and rear
 Deck.Removefront()
+Deck.Removerear()
             
         
 
