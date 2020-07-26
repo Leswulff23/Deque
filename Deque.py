@@ -19,7 +19,7 @@ class Deque:
         if (self.front == 0 and self.rear ==len(self.items)-1) or (self.front == self.rear+1):
            return True
 
-        else:
+        else: 
         #returns false when there is space
             return False
 
@@ -67,13 +67,13 @@ class Deque:
         if(self.isEmpty()):
             print("The Array is Empty")
         else:
-            if(self.front==self.rear): #When there is only one element
+            if(self.front==self.rear): #If front and back point to the same index(one item)
                 self.front=-1
                 self.rear=-1
-            elif(self.front==len(self.items)-1):
+            elif(self.front==len(self.items)-1):#Condition in case the front element is pointing to the last index
                 self.front=0
             else:
-                self.front+=1
+                self.front+=1 
         self.getFront()
         self.display()
         
@@ -82,17 +82,17 @@ class Deque:
         if(self.isEmpty()):
             print("The Array is Empty")
         else:
-            if(self.front==self.rear):
+            if(self.front==self.rear):#If front and back point to the same index(one item)
                 self.front=-1
                 self.rear=-1
-            elif(self.rear ==0):
+            elif(self.rear ==0):#Condition in case the back element is pointing to the first index
                 self.rear=len(self.items)-1
             else:
                 self.rear-=1
         self.getRear()
         self.display()
 
-    def display(self):
+    def display(self): #Display function to print current elements of the array
         i = self.front
         print("Current Size:")
         while(i!=self.rear):
